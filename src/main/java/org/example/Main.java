@@ -26,11 +26,6 @@ public class Main {
         GenreRepository genreRepository = new GenreRepository(session);
         System.out.println(actorRepository.findAll());
         System.out.println(movieRepository.findAll());
-        Actor actor = Actor.builder()
-                .firstName("Test")
-                .lastName("Test")
-                .build();
-
 //        Genre genre = new Genre();
 //        genre.setName("Shqiptar");
 //        genreRepository.save(genre);
@@ -48,9 +43,9 @@ public class Main {
 //        Movie movie = movieRepository.findById(1L);
 //        actor.addMovie(movie);
 //        actorRepository.save(actor);
-        Scanner scanner = new Scanner(System.in);
-        GenreService genreService = new GenreService(genreRepository, scanner);
-        Genre genre = genreService.update();
-        System.out.println(genre);
+//        Scanner scanner = new Scanner(System.in);
+//        GenreService genreService = new GenreService(genreRepository, scanner);
+//        Genre genre = genreService.update();
+//        System.out.println(genre);
     }
 }
